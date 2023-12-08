@@ -1,4 +1,13 @@
-let main = document.querySelector('main');
+document.addEventListener("DOMContentLoaded", function() {
+    let menuToggle = document.querySelector('.menuToggle');
+    let sidebar = document.querySelector('.sidebar');
+
+    menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    });
+});
+let main = document.querySelector('.main');
 
 // Load existing items from local storage or initialize an empty array
 let cart = JSON.parse(localStorage.getItem('product')) || [];
@@ -30,7 +39,7 @@ main.innerHTML = cart.map(function(item, index) {
         </table>`;
 }).join('');
 
-// Add event listeners to the Remove buttons
+// adding a eventlister for the remove button
 document.querySelectorAll('.remove-btn').forEach(button => {
     button.addEventListener('click', function() {
         let indexToRemove = this.getAttribute('data-index');
