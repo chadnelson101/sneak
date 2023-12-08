@@ -497,7 +497,7 @@ main{
         color: black;
         transform: rotateY(180deg);
       }
-.main{
+      main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -701,7 +701,7 @@ section{
 .abt-image:hover img{
     transform: scale(1.2);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .head h1 {
         font-size: 30px;
        margin-left: -15%;
@@ -713,7 +713,7 @@ section{
 
     .abt-content h2 {
         margin-left: 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -811,28 +811,4 @@ tr td:first-child{
 tr td:first-child{
     padding-top: 20px;
   }
-  @media screen and (max-width: 700px) {
-    .container2 {
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 0;
-    }
-    .input-row {
-        margin-bottom: 10px;
-    }
-
-    .input-row .input-group {
-        flex-basis: 100%;
-    }
-    footer{
-        position: relative;
-        margin-top: 0%;
-    }
-    .contact-left{
-        position: absolute;
-        margin-left: 10%;
-    }
-    .contact-right{
-        margin-top: 20%;
-    }
-}
   /* end of contact page */
