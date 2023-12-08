@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // let savedProduct = products[index];
 
     let Name = document.getElementById('name').value;
-    let Price = parseFloat(document.getElementById('price').value);
+    let Price = document.getElementById('price').value;
     let Image = document.getElementById('image').value;
 
     // Create a new product object
