@@ -468,3 +468,28 @@
   
   /* products page ends */
   
+   /* cart page start */
+.table{
+}
+.table td{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+}
+.table th{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px soldid black;
+}
+.table img{
+    width: 200px;
+}
+.table input{
+    width: 50px;
+}
+.subtotal{
+  margin-left: 10%;
+}
+  /* cart page end */
