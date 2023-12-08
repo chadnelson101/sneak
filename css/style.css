@@ -311,74 +311,59 @@
     font-weight: 400;
     margin: 0px 5px;
   }
-  @media (max-width:700px){
-    .footernav ul{
-      flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    body {
+      background: linear-gradient(to right bottom, #7aa7ba, #0d1a20);
     }
-    .footernav ul li{
+  
+    .sidebar {
+      width: 80px;
+      padding-left: 5px;
+      display: none;
+    }
+  
+    .sidebar.active {
+      width: 200px;
+      display: inline;
+    }
+  
+    .container {
       width: 100%;
+      padding: 1rem;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+      left: 1rem;
+    }
+  
+    .header {
+      left: 50%;
+      top: 120%;
       text-align: center;
-      margin: 10px;
+      transform: translateX(-50%);
+    }
+    .header p{
+        text-align: center;
+    }
+    .header li a{
+        text-decoration: none;
+    }
+    .logo h2{
+        margin-left: 1%;
+    }
+    .featured__items {
+        margin-top: -25%;
+        margin-left: -20%;
+    }
+    .image{
+        width: 350px;
+        margin-top: 10%;
+    }
+    .menuToggle{
+        margin-right: 10%;
     }
   }
-
- @media  (width <640px) {
-   /* Adjustments for smaller screens */
-   .logo {
-       margin-left: -2rem;
-   }
-
-   .header {
-       left: 50%;
-       transform: translateX(-50%);
-       text-align: center;
-       top: 20rem;
-   }
-   .header p{
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-   }
-
-   .featured__items {
-       left: -20%;
-       top: 70px;
-   }
-
-   .container {
-       position: relative;
-       z-index: 1; /* Set a higher z-index for the content */
-   }
-
-   .image {
-       position: relative;
-       z-index: -10000; /* Lower z-index for the image to go behind the sidebar */
-       left: -2rem;
-       top: 5rem;
-   }
-
-   .sidebar {
-       position: fixed; /* Fix the sidebar to the screen */
-       top: 0px;
-       left: -200px; /* Hide the sidebar off-screen initially */
-       width: 200px;
-       height: 100vh;
-       background-color: #ffffff;
-       transition: 0.5s;
-       z-index: 10000; /* Set a higher z-index for the sidebar to overlay the content */
-   }
-
-   .sidebar.active {
-       left: 0; /* Show the sidebar when active */
-   }
-
-   .image img {
-       max-width: 100%; /* Ensure the image takes full width */
-   }
-   .menuToggle{
-      z-index: 100000;
-   }
-}
 
 /* landing page ends */
 
