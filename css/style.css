@@ -546,3 +546,81 @@
     }
   }
   /* admin page ends */
+
+  /* about page start */
+.head{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 9%;
+     height: 20vh; 
+}
+.head h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.head h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+}
+.head p{
+    font-size: 90%;
+    color: #666;
+    margin-bottom: 35px;
+}
+.container1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.abt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.abt-image{
+    flex: 1;
+    overflow: hidden;
+    margin-left: 41%;
+}
+.abt-image img{
+    max-width: 350px;
+    border-radius: 50px;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.abt-content{
+    flex: 1;
+}
+.abt-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+    margin-left: 34%;
+    margin-top: 40px;
+}
+.abt-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+
+}
+.abt-image img{
+    transition: 0.5s ease;
+}
+.abt-image:hover img{
+    transform: scale(1.2);
+}
+/* about page end */
