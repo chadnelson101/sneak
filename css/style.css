@@ -657,6 +657,8 @@ section{
     width: 90%;
     margin: 0 auto;
     padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
 }
 .abt{
     display: flex;
@@ -699,6 +701,22 @@ section{
 .abt-image:hover img{
     transform: scale(1.2);
 }
+@media screen and (max-width: 768px) {
+    .head h1 {
+        font-size: 30px;
+       margin-left: -15%;
+    }
+
+    .abt-image {
+        margin-left: 0;
+    }
+
+    .abt-content h2 {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+
 /* about page end */
 
 /* contact page start */
