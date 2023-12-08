@@ -551,8 +551,12 @@ main{
     text-align: center;
     text-decoration: none;
  }
- .tbl{
-    margin-left: 10%;
+section{
+    margin-left: 25%;
+    margin-top: 5%;
+ }
+ section button{
+    margin: 10px;
  }
   button {
     padding: 10px 12px;
@@ -569,6 +573,17 @@ main{
   .add{
     margin-left: 70%;
     margin-top: 30px;
+  }
+.tbl{
+    justify-content: center;
+    align-items: center;
+  }
+  .tbl tr{
+    border: 2px solid black;
+  }
+  .tbl td{
+    border: 2px solid black;
+    color: black;
   }
   @media screen and (max-width: 550px) {
     /* Adjust styles for screens smaller than 600px wide */
@@ -588,6 +603,23 @@ main{
     .product-images{
        width: 100px;
     }
+    .add{
+        margin-left: 10%;
+        margin-top: 30px;
+      }
+      section{
+        margin-left: 0%;
+      }
+      .tbl button{
+        width: 65px;
+        margin: 3px;
+      }
+      .tbl tr{
+        border: 2px solid black;
+      }
+      .tbl td{
+        border: 2px  solid black;
+      }
   }
   /* admin page ends */
 
