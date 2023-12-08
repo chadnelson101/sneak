@@ -15,14 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
     function renderProducts(productList) {
       main.innerHTML = productList.map(function(item, index) {
         return `
-       <div class="card" style="width: 18rem;" id='products'>
-           <img src="${item.url}" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">${item.name}</h5>
-           <p class="card-text">${item.price}</p>
-           <button id='add' data-cart value='${index}'>Add to cart</button>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <p class="title"><img class='product-images' src="${item.url}"/></p>
+             <p>${item.name}</p>
         </div>
-      </div>`;
+         <div class="flip-card-back">
+            <p class="title">R${item.price}</p>
+            <p><button id='add' data-cart value='${index}'>Add to cart</button></p>
+        </div>
+    </div>
+</div>`;
       }).join('');
     }
   
@@ -40,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (event.target.hasAttribute('data-cart')) {
         addToCart(event.target.value);
       }
+      alert('item added to cart')
     });
   
     // Sorting functionality
