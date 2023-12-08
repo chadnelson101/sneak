@@ -551,8 +551,12 @@ main{
     text-align: center;
     text-decoration: none;
  }
- .tbl{
-    margin-left: 10%;
+section{
+    margin-left: 25%;
+    margin-top: 5%;
+ }
+ section button{
+    margin: 10px;
  }
   button {
     padding: 10px 12px;
@@ -569,6 +573,17 @@ main{
   .add{
     margin-left: 70%;
     margin-top: 30px;
+  }
+.tbl{
+    justify-content: center;
+    align-items: center;
+  }
+  .tbl tr{
+    border: 2px solid black;
+  }
+  .tbl td{
+    border: 2px solid black;
+    color: black;
   }
   @media screen and (max-width: 550px) {
     /* Adjust styles for screens smaller than 600px wide */
@@ -588,6 +603,23 @@ main{
     .product-images{
        width: 100px;
     }
+    .add{
+        margin-left: 10%;
+        margin-top: 30px;
+      }
+      section{
+        margin-left: 0%;
+      }
+      .tbl button{
+        width: 65px;
+        margin: 3px;
+      }
+      .tbl tr{
+        border: 2px solid black;
+      }
+      .tbl td{
+        border: 2px  solid black;
+      }
   }
   /* admin page ends */
 
@@ -625,6 +657,8 @@ main{
     width: 90%;
     margin: 0 auto;
     padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
 }
 .abt{
     display: flex;
@@ -667,6 +701,22 @@ main{
 .abt-image:hover img{
     transform: scale(1.2);
 }
+@media screen and (max-width: 700px) {
+    .head h1 {
+        font-size: 30px;
+       margin-left: -15%;
+    }
+
+    .abt-image {
+        margin-left: 0;
+    }
+
+    .abt-content h2 {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+
 /* about page end */
 
 /* contact page start */
@@ -761,4 +811,28 @@ tr td:first-child{
 tr td:first-child{
     padding-top: 20px;
   }
+  @media screen and (max-width: 700px) {
+    .container2 {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0;
+    }
+    .input-row {
+        margin-bottom: 10px;
+    }
+
+    .input-row .input-group {
+        flex-basis: 100%;
+    }
+    footer{
+        position: relative;
+        margin-top: 0%;
+    }
+    .contact-left{
+        position: absolute;
+        margin-left: 10%;
+    }
+    .contact-right{
+        margin-top: 20%;
+    }
+}
   /* end of contact page */
