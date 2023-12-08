@@ -379,3 +379,92 @@
       z-index: 100000;
    }
 }
+
+/* landing page ends */
+
+/* products page starts */
+    .card {
+    left: 30%;
+    margin: 10px;
+    }
+    .search{
+      margin-left: 10%;
+      margin-top: 2%;
+      border-radius: 20px;
+    }
+  input{
+    margin-left: 0%;
+    border-radius: 10px;
+  }
+  #product {
+    display: flex;
+    margin-left: 0%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  }
+  
+  .card {
+      position: relative;
+      border: 1px solid #ddd; /* Add border or any other styling as needed */
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      background: #fff;
+      display: grid;
+      margin: 20px;
+      width: 400px;
+      margin-left: 20%;
+      height: 450px;
+  }
+  .card.move{
+    margin-left: -0%;
+  }
+  .card:hover {
+      transform: scale(1.05);
+  }  
+  .card.imag {
+      position: absolute;
+      background: rgb(241, 241, 241);
+      width: 100px;
+      height: 100px; /* Adjust the height as needed */
+      /* display: grid; */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 10%;
+  }
+  .card .title{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9em;
+      position: absolute;
+      bottom: 5.5rem;
+      left: 4rem;
+      font-weight: 400;
+      color: #000;
+  }
+  .card .price{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9em;
+      position: absolute;
+      bottom: 3.5rem;
+      left: 7em;
+      font-weight: 400;
+      color: #000;
+  }
+  #product{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #add{
+      --color: black;
+  }
+ input{
+      top: -30px;
+      left: -30px;
+  }
+  
+  /* products page ends */
+  
