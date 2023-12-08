@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sidebar.classList.toggle('active');
     });
 });
-let main = document.querySelector('.main');
+let main = document.querySelector('.mains');
 
 // Load existing items from local storage or initialize an empty array
 let cart = JSON.parse(localStorage.getItem('product')) || [];
